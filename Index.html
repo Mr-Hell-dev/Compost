@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+            integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="">
+            <section
+                class="
+                    row
+                    justify-evenly
+                    flex
+                    w-full
+                    flex-col
+                    h-full
+                    px-6
+                    py-4
+                    md:flex-row
+                "
+            >
+                <div class="">
+                    <img
+                        class="w-full h-full"
+                        src="./Ashirvad_10kg.jpeg"
+                    />
+                </div>
+                <div class="heightadjust w_48 py-4 px-3 space-y-7">
+                    <div>
+                        <h1 class="text-xl" id="Product_title">
+                            Aashirvaad Atta - Whole Wheat 10 kg Pouch
+                        </h1>
+                        <p class="font-medium text-xl">Rs:399</p>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-gray-400">
+                            Pack Sizes
+                        </h1>
+
+                        <div
+                            class="
+                                w-full
+                                md:w-1/2
+                                font-bold
+                                grid grid-rows-1 grid-cols-2
+                            "
+                        >
+                            <span
+                                class="
+                                    break-words
+                                    overflow-x-hidden
+                                    p-5
+                                    text-center
+                                    rounded-xl
+                                    Packs
+                                    cursor-pointer
+                                "
+                                id="attapacksize10"
+                                onclick="actionmaker(event)"
+                            >
+                                10 Kg
+                                <br />
+                                Rs 399
+                            </span>
+                            <span
+                                class="
+                                    Packs
+                                    text-center
+                                    break-words
+                                    p-5
+                                    overflow-x-hidden
+                                    rounded-xl
+                                    cursor-pointer
+                                "
+                                id="attapacksize5"
+                                onclick="actionmaker(event)"
+                            >
+                                5 Kg
+                                <br />
+                                Rs 209
+                            </span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h1 class="text-2xl text-gray-400">
+                            Quantity:
+                        </h1>
+                        <br />
+                        <span
+                            class="font-bold text-2xl rounded-3xl p-1"
+                        >
+                            <span
+                                class="
+                                    inline
+                                    mx-3
+                                    selection_remover
+                                    cursor-pointer
+                                "
+                                onclick="actionmaker(event)"
+                                id="decrease"
+                            >
+                                -
+                            </span>
+                            <span class="inline" id="Quantitynumber">
+                                1
+                            </span>
+                            <span
+                                class="
+                                    inline
+                                    mx-3
+                                    selection_remove
+                                    cursor-pointer
+                                "
+                                onclick="actionmaker(event)"
+                                id="increase"
+                            >
+                                +
+                            </span>
+                        </span>
+                    </div>
+                    <div class="w-full md:w-3/5 font-bold text-xl">
+                        <div class="inline-block w-1/2">
+                            <h1
+                                class="
+                                    p-3
+                                    text-center
+                                    font-bold
+                                    text-white
+                                    bg-blue-400
+                                    rounded-3xl
+                                "
+                            >
+                                Payable
+                            </h1>
+                        </div>
+                        <div class="inline-block text-center w-1/12">
+                            =
+                        </div>
+                        <div
+                            class="
+                                inline-block
+                                text-center text-green-500
+                                w-1/5
+                            "
+                            id="calculatedval"
+                        >
+                            Rs:0
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div
+                class="
+                    w-full
+                    h-full
+                    mt-3
+                    mx-1
+                    p-2
+                    flex flex-col
+                    md:flex-row
+                "
+            >
+                <section
+                    class="
+                        inline-block
+                        bg-gray-100
+                        w-full
+                        md:w-1/2
+                        p-2
+                    "
+                >
+                    <div
+                        class="
+                            grid grid-rows-1 grid-cols-2
+                            gap-0
+                            h-5/6
+                            w-full
+                            p-3
+                        "
+                    >
+                        <div class="">
+                            <img
+                                class="h-full bg-transparent w-full"
+                                src="./masala_left.jpg"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                class="h-full bg-transparent w-full"
+                                src="./Masala_right.jpg"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            w-11/12
+                            m-auto
+                            bg-white
+                            text-center
+                            rounded-xl
+                            text-sm
+                            md:text-xl
+                        "
+                    >
+                        Masala Spices and Cooking Pastes
+                    </div>
+                </section>
+                <section class="w-full md:w-1/2 bg-gray-100">
+                    <div
+                        class="
+                            grid grid-rows-2 grid-cols-2
+                            p-3
+                            whitespace-nowrap
+                        "
+                    >
+                        <div class="p-2">
+                            <div
+                                class="
+                                    grid grid-rows-1 grid-cols-2
+                                    gap-0
+                                    h-4/5
+                                    p-3
+                                    w-full
+                                "
+                            >
+                                <div class="">
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./Attabowl.jpeg"
+                                    />
+                                </div>
+                                <div>
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./atta_compact.jpg"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                    w-11/12
+                                    m-auto
+                                    bg-white
+                                    text-center
+                                    rounded-xl
+                                    text-sm
+                                    md:text-xl
+                                "
+                            >
+                                Atta & Flour
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div
+                                class="
+                                    grid grid-rows-1 grid-cols-2
+                                    gap-0
+                                    h-4/5
+                                    p-3
+                                    w-full
+                                "
+                            >
+                                <div class="">
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./bowlrice.jpg"
+                                    />
+                                </div>
+                                <div>
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./rice.jpg"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                    w-11/12
+                                    m-auto
+                                    bg-white
+                                    text-center
+                                    rounded-xl
+                                    text-sm
+                                    md:text-xl
+                                "
+                            >
+                                Rice & Rice Products
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div
+                                class="
+                                    grid grid-rows-1 grid-cols-2
+                                    gap-0
+                                    h-4/5
+                                    p-3
+                                    w-full
+                                "
+                            >
+                                <div class="">
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./almonds.jpeg"
+                                    />
+                                </div>
+                                <div>
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./dal.jpg"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                    w-3/4
+                                    m-auto
+                                    bg-white
+                                    text-center
+                                    rounded-xl
+                                    text-sm
+                                    md:text-xl
+                                "
+                            >
+                                Dals & Pulses
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div
+                                class="
+                                    grid grid-rows-1 grid-cols-2
+                                    gap-0
+                                    h-4/5
+                                    p-3
+                                    w-full
+                                "
+                            >
+                                <div class="">
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./ghee.jpeg"
+                                    />
+                                </div>
+                                <div>
+                                    <img
+                                        class="
+                                            h-full
+                                            bg-transparent
+                                            w-full
+                                        "
+                                        src="./fortune.jpg"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                    w-3/4
+                                    m-auto
+                                    bg-white
+                                    text-center
+                                    rounded-xl
+                                    text-sm
+                                    md:text-xl
+                                "
+                            >
+                                Cooking Oils
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

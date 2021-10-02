@@ -1,0 +1,22 @@
+.showborder {
+    border: 3px solid black;
+}
+.w_48 {
+    width: 48%;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+    .w_48 {
+        width: 100%;
+    }
+}
+
+.Packs:hover {
+    background-color: #74fb0a80;
+}
+.heightadjust {
+    height: 100%;
+}
+.selection_remover {
+    user-select: none;
+}
